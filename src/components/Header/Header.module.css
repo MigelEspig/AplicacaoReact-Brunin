@@ -1,0 +1,55 @@
+.header {
+    background-color: #2d2a32; /* Um tom mais escuro e moderno */
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between; /* Separa o título do menu */
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.headerbox h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #00ff88; /* Um verde "Pix" para destacar */
+}
+
+.headerbox p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.HeaderNav {
+    display: flex;
+    gap: 20px; /* Espaço entre os links */
+}
+
+.HeaderLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.HeaderLink:hover {
+    color: #00ff88;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center;
+        gap: 15px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .HeaderNav {
+        gap: 15px;
+    }
+}
