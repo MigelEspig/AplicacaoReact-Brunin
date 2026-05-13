@@ -1,6 +1,6 @@
 import style from './Card.module.css'
-import paoMofado from '../../Imgs/pao-Mofado.jpg'
 import ConteudoPrincipal from '../ConteudoPrincipal';
+import { Link } from 'react-router-dom';
 
 export default function Card({ title, price, desc, img }) {
     return <>
@@ -9,6 +9,7 @@ export default function Card({ title, price, desc, img }) {
                 <h4 className={style.title}>{title}</h4>
                 <p className={style.description}>{desc}</p>
                 <p className={style.price}>R$ {price.toFixed(2).replace('.', ',')}</p>
+                <Link className={style.buttonCard} to="/Cart">Comprar</Link>
         </div>
     </>
 }

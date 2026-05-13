@@ -1,8 +1,10 @@
+import ConteudoPrincipal from "../../ConteudoPrincipal";
+
 function Catalog() {
     return(
         <section>
             <h1>Catálogo de Produtos</h1>
-            <p>Aqui estarão os produtos disponíveis.</p>
+            <ConteudoPrincipal />
         </section>
     )
 }

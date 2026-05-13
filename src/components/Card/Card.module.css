@@ -37,7 +37,29 @@
 
 .price {
     margin: 0 20px 24px;
-    color: #059669;
+    color: #00e078;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.buttonCard{
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 12px 0;
+    background-color: #059669;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 220ms ease, transform 220ms ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.buttonCard:hover {
+    background-color: #047857;
+    transform: translateY(-2px);
 }

@@ -1,12 +1,11 @@
-import ConteudoPrincipal from "../../ConteudoPrincipal";
 import ConteudoHome from "../../ConteudoHome";
+import { Footer } from "../../Footer";
 
 function Home() {
     return( 
         <>
-            <h1>Compre já:</h1>
-            <ConteudoPrincipal />
             <ConteudoHome /> 
+            <Footer />
         </>
     )
 }
