@@ -4,6 +4,7 @@ import './index.css';
 import { Header } from './components/Header';
 import AppRoutes from './components/routes';
 import {BrowserRouter} from 'react-router-dom';
+import { CarrinhoProvider } from './context/CarrinhoContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,8 +13,10 @@ root.render(
   <React.StrictMode>
     
     <BrowserRouter>
+    <CarrinhoProvider>
         <Header />
         <AppRoutes />
+    </CarrinhoProvider>
     </BrowserRouter>
 
   </React.StrictMode>

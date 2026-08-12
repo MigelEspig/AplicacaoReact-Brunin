@@ -13,12 +13,7 @@ function ConteudoHome() {
                 <div className={style.productsContainer}>
                     {listadestaque.map((produto) => (
                         <div key={produto.id} className={style.cardWrapper}>
-                            <Card
-                                title={produto.nome}
-                                desc={produto.desc}
-                                price={produto.preco}
-                                img={produto.img}
-                            />
+                            <Card produto={produto} />
                         </div>
                     ))}
                 </div>

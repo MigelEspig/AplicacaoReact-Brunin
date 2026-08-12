@@ -13,6 +13,7 @@ export default function Header() {
                     <Link className={styles.HeaderLink} to="/">Home</Link>
                     <Link className={styles.HeaderLink} to="/Catalog">Produtos</Link>
                     <Link className={styles.HeaderLink} to="/Cart">Carrinho</Link>
+                    <Link className={styles.HeaderLink} to="/Pedidos">Pedidos</Link>
                 </nav>
             </div>
 
