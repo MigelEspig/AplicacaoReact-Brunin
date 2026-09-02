@@ -18,4 +18,17 @@ describe("formatarPreco", () => {
 
     });
 
+    test("formata zero com duas casas decimais", () => {
+        expect(formatarPreco(0)).toBe("R$ 0,00");
+    });
+
+    test("retorna zero para valores inválidos", () => {
+        expect(formatarPreco("10")).toBe("0,00");
+        expect(formatarPreco(NaN)).toBe("0,00");
+    });
+
+    test("preserva o sinal de valores negativos", () => {
+        expect(formatarPreco(-25.5)).toBe("R$ -25,50");
+    });
+
 })
