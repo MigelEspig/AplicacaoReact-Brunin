@@ -1,5 +1,6 @@
 import {formatarPreco} from './formatarPreco';
 
+
 describe("formatarPreco", () => {
 
     test("formata um valor comum no padrâo brasileiro", () => {

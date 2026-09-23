@@ -1,5 +1,4 @@
 import style from './Card.module.css'
-import { Link } from 'react-router-dom';
 import { useCarrinho } from '../../context/CarrinhoContext';
 import { formatarPreco } from '../../utils/formatarPreco';
 
